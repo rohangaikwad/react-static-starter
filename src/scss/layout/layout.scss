@@ -1,0 +1,10 @@
+@import "header";
+@import "footer";
+
+main#root {
+    display: flex; flex-direction: column; min-height: 100vh;
+}
+
+#sticky-footer-helper {
+    margin-top: auto;
+}

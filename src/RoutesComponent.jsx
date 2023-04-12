@@ -22,6 +22,7 @@ const LazyComponent = ({ Element, fallback = <>...</>, isProtected = false }) =>
 };
 
 const ProtectedComponent = ({ Element, redirectPath = "/" }) => (
+    // eslint-disable-next-line no-constant-condition
     1 === 2
         ? <Navigate to={redirectPath} />
         : <Element />

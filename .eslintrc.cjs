@@ -14,10 +14,13 @@ module.exports = {
         ecmaVersion: "latest",
         sourceType: "module"
     },
-    plugins: ["react"],
+    plugins: ["react", "eslint-plugin-custom"],
     globals: { __DEV__: true },
     rules: {
         "comma-dangle": [0],
+        "custom/image-no-hardcoded-cdn-url": [0],
+        "custom/image-size": [2],
+        "custom/class-name-pattern": [2],
         "func-names": [0],
         "implicit-arrow-linebreak": [0],
         "import/extensions": [0],
@@ -31,6 +34,7 @@ module.exports = {
         "jsx-a11y/no-static-element-interactions": [0],
         "linebreak-style": ["error", "windows"],
         "max-len": [0],
+        "newline-per-chained-call": [0],
         "no-console": [0],
         "no-plusplus": [0],
         "no-underscore-dangle": [0],
